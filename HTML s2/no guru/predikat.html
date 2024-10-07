@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="tombol()"></button>
+    <script>
+        var nilai = 90;
+        var predikat = "";
+
+        if(nilai >= 90) predikat = "A";
+        else if (nilai >= 80) predikat = "B";
+        else if (nilai >= 70) predikat = "C";
+        else if (nilai >= 60) predikat = "D";
+        else predikat = "F";
+
+        function tombol(){
+            alert("nilai anda : "+nilai+" dan "+"predikat anda : "+predikat)
+        }
+
+        // document.write(`Nilai anda : ${nilai} <br>`)
+        // document.write(`Predikat anda : ${predikat}`)
+    </script>
+</body>
+</html>

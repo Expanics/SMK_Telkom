@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Keluarga</title>
+</head>
+<body>
+
+    <div class="tombol">
+        <button onclick="ayah()" class="ayah">ayah</button>
+        <button onclick="ibu()" class="ibu">ibu</button>
+        <button onclick="Muthia()" class="kakak">Muthia</button>
+        <button onclick="Farhan()" class="abang">Farhan</button>
+        <button onclick="Yusuf()" class="yusuf">Yusuf</button>
+    </div>
+    
+
+    <script>
+        var a=56, b=55, c=23, d=19, e=16;
+
+        function ayah(){
+            alert("Dedy Adrianto");
+            alert(a + " Tahun");
+
+            if(a > 17){
+                alert("udah dewasa")
+            }
+            else{
+                alert("belum dewasa")
+            }
+        }
+        function ibu(){
+            alert("Dina Aryani");
+            alert(b + " Tahun");
+
+            if(b > 17){
+                alert("udah dewasa")
+            }
+            else{
+                alert("belum dewasa")
+            }
+        }
+
+        function Muthia(){
+            alert("Muthia Adriana Silvi");
+            alert(c + " Tahun");
+
+            if(c > 17){
+                alert("udah dewasa")
+            }
+            else{
+                alert("belum dewasa")
+            }
+        }
+        function Farhan(){
+            alert("Ahmad Farhan Ibrahim");
+            alert(d + " Tahun");
+
+            if(d > 17){
+                alert("udah dewasa")
+            }
+            else{
+                alert("belum dewasa")
+            }
+        }
+        function Yusuf(){
+            alert("Yusuf Abadurrahman Aslam");
+            alert(e + " Tahun");
+
+            if(e > 17){
+                alert("udah dewasa")
+            }
+            else{
+                alert("belum dewasa")
+            }
+        }
+    </script>
+
+    <style>
+        body{
+            background:linear-gradient( to right, red, yellow, wheat  ) ;
+        }
+        button{
+            background-color: red; 
+            border-color: none;
+        }
+        .badan{
+            text-align: left    ;
+        }
+        .ayah{
+            position: absolute;
+            top: 50px;
+            width: 56px; 
+        }
+        .ibu{
+            position: absolute;
+            top: 100px;
+            width: 56px; 
+        }
+        .kakak{
+            position: absolute;
+            top: 150px;
+            width: 56px; 
+        }
+        .abang{
+            position: absolute;
+            top: 200px;
+            width: 56px; 
+        }
+        .yusuf{
+            position: absolute;
+            top: 250px;
+            width: 56px; 
+        }
+        .tombol{
+            padding-left: 50%;
+            position: absolute;
+            top: 100px;
+        }
+    </style>
+</body>
+</html>

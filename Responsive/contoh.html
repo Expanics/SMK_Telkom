@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="slideshow now">
+    <div class="slider">
+      <input type="radio" name="radio" id="radio1" checked>
+      <input type="radio" name="radio" id="radio2">
+      <input type="radio" name="radio" id="radio3">
+      <input type="radio" name="radio" id="radio4">
+      <input type="radio" name="radio" id="radio5">
+
+      <div class="slide sh1">
+        <a href="Daleman.html" target="_blank">
+        <img src="D:\Yusuf Abdurrahman Aslam\foto\sentra\google pixel. 7jpg.jpg" alt="Telkom">
+        </a>
+      </div>
+      <div class="slide">
+        <a href="Daleman.html" target="_blank">
+          <img src="D:\Yusuf Abdurrahman Aslam\foto\sentra\vivo v25 pro 5g.jpg" alt="Yagatarama">
+          </a>
+      </div>
+      <div class="slide">
+        <a href="Daleman.html" target="_blank">
+          <img src="D:\Yusuf Abdurrahman Aslam\foto\sentra\ROG phone 6.jpg" alt="slime">
+          </a>
+      </div>
+      <div class="slide">
+        <a href="Daleman.html" target="_blank">
+          <img src="D:\Yusuf Abdurrahman Aslam\foto\sentra\Google_Pixel_7_Pro.webp" alt="Better">
+          </a>
+      </div>
+      <div class="slide">
+        <a href="Daleman.html" target="_blank">
+          <img src="D:\Yusuf Abdurrahman Aslam\foto\sentra\galaxy-z-fold-4-dan-z-flip-4.jpeg" alt="">
+          </a>
+      </div>
+    </div>
+
+    <div class="nav">
+      <label for="radio1" class="bar"></label>
+      <label for="radio2" class="bar"></label>
+      <label for="radio3" class="bar"></label>
+      <label for="radio4" class="bar"></label>
+      <label for="radio5" class="bar"></label>
+    </div>
+  </div>
+
+  <style>
+    body{
+  margin:0;
+  padding:0;
+  background-color: gray;
+}
+
+.slideshow{
+  width: 900px;
+  height: 450px;
+  overflow: hidden;
+  border: 1px solid darkblue;
+}
+.now{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav{
+  position: absolute;
+  bottom: 10px;
+  left:50%;
+  transform: translate(-50%);
+  display: flex;
+}
+.bar{
+  width: 10px;
+  height: 10px;
+  border: 2px solid #00d9ff;
+  margin:6px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.bar:hover{
+  background-color: none;
+}
+input[name="radio"]
+{
+  position: absolute;
+  visibility: hidden;
+}
+
+.slider{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#radio1:checked ~ .sh1{
+  margin-left:0;
+}
+#radio2:checked ~ .sh1{
+  margin-left:-20%;
+}
+#radio3:checked ~ .sh1{
+  margin-left:-40%;
+}
+#radio4:checked ~ .sh1{
+  margin-left:-60%;
+}
+#radio5:checked ~ .sh1{
+  margin-left:-80%;
+}
+  </style>
+</body>
+</html>

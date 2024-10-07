@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var umur = prompt("Masukan umur anda: ");
+        var masa = "";
+
+        if(umur >= 1 - 5) masa = "Bayi"
+        else if(umur >= 5) masa = "Balita";
+        else if(umur >= 15) masa = "Anak anak";
+        else if(umur >= 17) masa = "Remaja";
+        else if(umur >= 40) masa = "Dewasa";
+        else if(umur >= 60) masa = "Lansia";
+
+        document.write(`Umur anda adalah : ${umur} dan Yang muncul adalah: ${masa}`);
+    </script>
+</body>
+</html>

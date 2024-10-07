@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar Responsive</title>
+
+    
+</head>
+
+<body>
+    <h2 style="text-align:center">Responsive image gallery</h2>
+
+    <!-- 1 -->
+    <div class="responsive">
+        <div class="img">
+            <a href="contoh.html" target="_blank">
+                <img src="lambang telkom2.jpg" alt="Telkom" >
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="responsive">
+        <div class="img">
+            <a href="contoh.html" target="_blank">
+                <img src="lambang telkom2.jpg" alt="Telkom">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="responsive">
+        <div class="img">
+            <a href="contoh.html" target="_blank">
+                <img src="lambang telkom2.jpg" alt="Telkom">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="responsive">
+        <div class="img">
+            <a href="contoh.html" target="_blank">
+                <img src="lambang telkom2.jpg" alt="Telkom">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <style>
+        .img{
+            border: 1px solid gainsboro;
+        }
+        .img:hover{
+            border: 1px solid gray;
+        }
+        .img img{
+            width: 100%;
+            height: auto;
+        }
+        .desc{
+            padding: 15px;
+            text-align: center;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .responsive{
+            padding: 0 6px;
+            float: left;
+            width: 25%;
+        }
+        @media only screen and (max-width:500px){
+            .responsive{
+                width: 50%;
+                margin: 6px 0;
+            }
+        }
+        @media only screen and (max-width: 300px){
+            .responsive {
+                width: 100%;
+            }
+        }
+    </style>
+</body>
+
+</html>

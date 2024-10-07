@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="4">Daftar Nilai <p id="a"></p></td>
+        </tr>
+        <tr>
+            <td>No.</td>
+            <td>Mata Pelajaran</td>
+            <td>Nilai Ulangan</td>
+            <td>Indeks Nilai</td>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Pemograman Web Perangkat Bergerak</td>
+            <td><p id="b"></p></td>
+            <td><button onclick="tombol()">Predikat</button></td>
+        </tr>
+    </table>
+
+
+
+    <script>
+        var a=prompt("Masukkan Nama Lengkap")
+        var b=prompt("Masukkan Nilai Anda")
+
+        var predikat = "";
+        
+        document.getElementById("a").innerHTML = a;
+        document.getElementById("b").innerHTML = b;
+
+        if(b >= 90) predikat = "A \n pertahankan nak😍";
+        else if (b >= 80) predikat = "B \n Tingkatkan ya nak😊";
+        else if (b >= 70) predikat = "C \n ayo jangan mau kalah😘";
+        else if (b >= 60) predikat = "D \n beajar lebih giat ya nak🤞";
+        else predikat = "F \n jangan putus asa kamu pasti bisa😉😁";
+
+        function tombol(){
+            alert("Selamat anda mendapatkan predikat : "+predikat)
+        }
+    </script>
+
+    <style>
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 120px;
+            width: 50%;
+            height: 50%;
+        }
+        td{
+            text-align: center;
+        }
+        p{
+            text-transform: uppercase;
+        }
+        button{
+            background-color: none;
+        }
+    </style>
+</body>
+</html>

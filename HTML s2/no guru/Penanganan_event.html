@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Kelas/No.Absen</h1>
+
+    <h2> Ayo daftar Guys!</h2>
+
+    <script>
+        function ambildata() {
+            var nama = document.getElementById("nama").value;
+            document.getElementById("demo").innerHTML = 
+            "Nama Lengkap \t: "+nama;
+
+            var email = document.getElementById("email").value;
+            document.getElementById("demo1").innerHTML = 
+            "E-email      \t: "+email;
+
+            var negara = document.getElementById("negara").value;
+            document.getElementById("demo2").innerHTML = 
+            "Negara       \t: "+negara;
+
+            
+            var jenis = new Array();
+            var jenis = document.getElementsByName("gender");
+            if (jenis[0].checked === true)
+            var j = jenis[0].value;
+            else if (jenis[1].checked === true )
+            var j = jenis[1].value;
+            else
+            var j = "anda belum memilih jenis kelamin";
+            document.getElementById("demo3").innerHTML = 
+            "Jenis Kelamin : "+j;
+
+
+            var lahir = document.getElementById("lahir").value;
+            document.getElementById("demo4").innerHTML = 
+            "Tanggal Lahir : "+lahir;
+        }
+    </script>
+
+    <p>nama lengkap  : <input type="text" id="nama"><br></p>
+    <p>E-email
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        : <input type="text" id="email"><br></p>
+    <p>Negara
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        : <input type="text" id="negara"><br></p>
+    <p>Tanggal Lahir : <input type="date" id="lahir"><br></p>
+
+    <p>Jenis Kelamin : <br>
+    <input type="radio" name="gender" value="Pria">Pria<br>
+    <input type="radio" name="gender" value="Wanita">Wanita<br></p>
+
+    <button onclick="ambildata()">daftar</button>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <p id="demo4"></p>
+
+    <p id="demo3"></p>
+
+</body>
+</html>
